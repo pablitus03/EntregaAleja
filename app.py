@@ -20,7 +20,7 @@ if text and target_lang:
     tts = gTTS(translated_text, lang=target_lang_code)
     tts.save("temp.wav")
     sound_file = "temp.wav"
-Audio(sound_file, autoplay=True)
+    Audio(sound_file, autoplay=True)
 
    # audio_file = open("temp/audio.mp3", "rb")
    # audio_bytes = audio_file.read()
