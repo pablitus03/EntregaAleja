@@ -3,8 +3,8 @@ from googletrans import Translator
 from gtts import gTTS
 
 st.title("Aplicativo AMA")
-#st.image("translate.png", width=200)
-#st.subheader("Texto a audio y traducción.")
+st.image("translate.png", width=200)
+st.subheader("Texto a audio y traducción.")
 text = st.text_input("Ingrese el texto:")
 languages = {"Inglés": "en", "Español": "es", "Chino Mandarín": "zh-cn", "Francés": "fr", "Ruso": "ru", "Hindi": "hi"}
 target_lang = st.selectbox("Seleccione el idioma de destino:", list(languages.keys()))
